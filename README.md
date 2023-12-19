@@ -6,14 +6,14 @@ Enable a disabled check for current configuration
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/checks-enable@v4.25.0
+- uses: liquibase-github-actions/checks-enable@v4.25.1
   with:
     # Name of check to enable
     # string
     # Required
     checkName: ""
 
-    # Allows automatic backup and updating of liquibase.checks.conf file when new quality checks are available. Options: [on|off]
+    # Allows automatic backup and updating of liquibase.checks.conf file when new quality checks are available, or for file format changes. Options: [on|off]
     # string
     # Optional
     autoUpdate: ""
@@ -35,7 +35,7 @@ The liquibase checks enable action accepts all valid liquibase global options as
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/checks-enable@v4.25.0
+  - uses: liquibase-github-actions/checks-enable@v4.25.1
     with:
       checkName: ""
       headless: true

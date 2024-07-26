@@ -6,9 +6,9 @@ Enable a disabled check for current configuration
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/checks-enable@v4.28.0
+- uses: liquibase-github-actions/checks-enable@v4.29.0
   with:
-    # Name of check to enable
+    # Comma separated list of names of checks to enable
     # string
     # Required
     checkName: ""
@@ -40,7 +40,7 @@ The liquibase checks enable action accepts all valid liquibase global options as
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/checks-enable@v4.28.0
+  - uses: liquibase-github-actions/checks-enable@v4.29.0
     with:
       checkName: ""
       headless: true
